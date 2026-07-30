@@ -56,8 +56,8 @@ body{
         @media (max-width: 40rem){
             grid-template-areas:
                 "header"
-                "main"
                 "nav"
+                "main"
                 "aside"
                 "footer";
         
