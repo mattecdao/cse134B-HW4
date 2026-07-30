@@ -35,8 +35,8 @@ body{
     .images{
         display: block;
         margin: auto;
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 300px;
+        min-height: 300px;
     }
     > footer{
         grid-area: footer;
