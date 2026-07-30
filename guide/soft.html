@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Soft Cheese Family Information by The CSE Cheese Society">
+        <title>Soft Cheese Family - CSE Cheesy Society</title>
+        <link rel="stylesheet" href="../styles/tokens.css">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/site.css">
+        <style>
+            body{
+                display: grid;
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "main"
+                    "footer";
+                grid-template-rows: auto auto 1fr auto;
+                min-height: 100svh;
+
+                > header{
+                    grid-area: header;
+                    padding: var(--space-2) var(--space-3);
+                    border-block-end: var(--border);
+                    background: var(--panel);
+                }
+                > nav{
+                    grid-area: nav;
+                    padding: var(--space-2) var(--space-3);
+                    border-block-end: var(--border);
+                    background: var(--paper);
+                }
+
+                > main{
+                    grid-area: main;
+                    padding: var(--space-3)
+                }
+
+                > footer{
+                    grid-area: footer;
+                    padding: var(--space-2) var(--space-3);
+                    border-block-end: var(--border);
+                    background: var(--panel);
+                }
+                #logo{
+                    max-width: 120px;
+                    max-height: 120px;
+                }
+                .images{
+                    display: block;
+                    margin: auto;
+                    background-color: var(--panel);
+
+                }
+                aside{
+                    border: var(--border);
+                    background-color: var(--panel);
+                    padding: var(--space-2) var(--space-3);
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1><img id = "logo" src = "../images/logo.svg" alt = "The CSE Cheese Society Logo featuring a cheese wheel with a nice slice of cheese taken out"
+                height=160 width = 160 />Soft Cheese Family</h1>
+        </header>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href = "../index.html">Society Home</a><br /></li>
+                <li><a href = "index.html">Guide</a></li>
+                <li><a href = "../about.html">About the Society</a><br /></li>
+                <li><a href = "../join.html">Membership form</a><br /></li>
+            </ul>
+        </nav>
+        <main>
+            <a href = "fresh.html">Previous - Fresh Cheeses</a><br />
+            <a href = "blue.html">Next - Blue Cheeses</a>
+            <h2>Soft-Ripened Cheeses</h2>
+             <img class = "images softCheese" src = "../images/cheese-soft.svg" height = 320 width = 320 
+                alt = "A picture of a soft, triangle slice of cheese"/><br />
+            <p>These grow a white, bloomy rind of Penicillium candidum that ripens
+the cheese from the outside in. Under the rind, the paste softens
+toward liquid as it ages.</p>
+            <p>Character: a velvety edible rind over a paste that ranges from chalky
+(young) to molten (ripe). Flavors of mushroom, butter, and cream.</p>
+            <p>Notable members: Brie, Camembert, and triple-creams like Brillat-
+Savarin.</p>
+            <p>How to enjoy: serve at room temperature — cold Brie is a crime the
+Society will forgive exactly once. And yes, eat the rind. The rind is
+the point.</p>
+            <aside>
+                Did you know? Camembert legend credits a Norman farmer, Marie Harel,
+with the recipe in 1791 — advice she supposedly received from a
+priest hiding from the Revolution.
+
+            </aside>
+        </main>
+        <footer>
+            <p>Copyright 2026 <a href = ../about.html>The CSE Cheese Society</a>. Cheese responsibly.</p>
+        </footer>
+    </body>
+</html>

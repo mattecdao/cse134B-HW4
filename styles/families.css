@@ -1,0 +1,48 @@
+body{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100svh;
+
+    > header{
+        grid-area: header;
+        padding: var(--space-2) var(--space-3);
+        border-block-end: var(--border);
+        background: var(--panel);
+    }
+    > nav{
+        grid-area: nav;
+        padding: var(--space-2) var(--space-3);
+        border-block-end: var(--border);
+        background: var(--paper);
+        border-bottom: 1px solid black;
+    }
+
+    > main{
+        grid-area: main;
+        padding: var(--space-4);
+    }
+
+    
+    #logo{
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .images{
+        display: block;
+        margin: auto;
+        min-width: 200px;
+        min-height: 200px;
+    }
+    > footer{
+        grid-area: footer;
+        margin-top: var(--space-4) 0;
+        padding: var(--space-2) var(--space-3);
+        border-block-end: 1 var(--border);
+        background: var(--panel);
+     }
+}

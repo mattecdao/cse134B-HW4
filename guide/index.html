@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CSE Cheese Society's Guide to Cheeses">
+    <title>CSE Cheese Society Guide</title>
+    <link rel="stylesheet" href="../styles/tokens.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/site.css">
+    <style>
+    body {
+      padding: var(--space-3);
+
+      #logo{
+            max-width: 120px;
+            max-height: 120px;
+        }
+    }
+    nav{
+        padding: var(--space-1);
+        border: var(--border);
+        background: var(--panel);
+        margin-bottom: 2rem;
+    }
+    section {
+        > p {
+            padding: var(--space-2);
+            border: var(--border);
+            background: var(--panel);
+        }
+
+      strong,
+      em {
+        background: var(--paper);
+        outline: var(--border-width) var(--border-style) var(--accent);
+      }
+
+      legend {
+        background: var(--panel);
+        border: var(--border)
+      }
+      fieldset {
+            background: var(--panel);
+            border: var(--border)
+        }
+    
+        #warning {
+            background-color: coral;
+        }
+    }
+
+    article {
+      max-width: var(--measure);
+      margin-inline: auto;
+      padding: var(--space-2) var(--space-3);
+      border-inline-start: var(--rule);
+      background: var(--panel);
+    }
+    
+    
+
+    </style>
+</head>
+    <body>
+        <header>
+            <h1><img id = "logo" src = "../images/logo.svg" alt = "The CSE Cheese Society Logo featuring a cheese wheel with a nice slice of cheese taken out"
+                width = 160 height = 160 />A Short Guide to Cheese</h1>
+
+            <p>by The CSE Cheese Society. Last updated <time datetime="2026-01">January 2026</time>.</p>
+            <p>Cheese is one of humanity's oldest prepared foods. People have made it
+                for at least 7,000 years, long before written history. At its core,
+                cheese is simple: milk, salt, cultures, and rennet. Time and technique
+                do the rest.</p>
+        </header>
+         <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href = "../index.html">Society Home</a><br /></li>
+                <li><a href = "index.html">Guide</a></li>
+                <li><a href = "../about.html">About the Society</a><br /></li>
+                <li><a href = "../join.html">Membership form</a><br /></li>
+            </ul>
+        </nav>
+        <main>
+        <article>
+            <h2>What Is Cheese, Really?</h2>
+
+            <p>Cheese begins when milk separates into curds and whey. The curds are
+            pressed, salted, and aged. Every variable matters: the animal, the
+            season, the cave, the patience of the maker. Change one and you get a
+            different cheese. This is why a single recipe has produced thousands
+            of distinct varieties.</p>
+            <section>
+            <p>The word <q>cheese</q> comes from the Latin <strong>caseus</strong>, which also gives us the
+            word <em><q>casein,</q></em> the main milk protein.</p>
+                <h2>Famous Families of Cheese</h2>
+                <dl>
+                    <dt><a href = "fresh.html">Fresh</a></dt>
+                    <dd>Fresh cheeses are young and mild. They include mozzarella, ricotta,
+                    and chevre. Eat these within days.</dd>
+                </dl>
+                    <picture>
+                    <img class = "freshCheese" src = "../images/cheese-fresh.svg" height = 160 width = 160
+                    alt = "A picture of a soft, fresh, and round piece of cheese"/>
+                    </picture>
+                <dl>
+                    <dt><a href = "soft.html">Soft-ripened</a></dt>
+                    <dd>Soft-ripened cheeses grow a white bloomy rind. Brie and Camembert are
+                    the classic examples. The rind is edible and you should eat it.</dd>
+                </dl>
+                <picture>
+                    <img class = "softCheese" src = "../images/cheese-soft.svg" height = 160 width = 160 
+                    alt = "A picture of a soft, triangle slice of cheese"/>
+                </picture>
+                <dl>
+                    <dt><a href = "blue.html">Blue</a></dt>
+                    <dd>Blue cheeses are veined with Penicillium roqueforti. Roquefort,
+                   Gorgonzola, and Stilton lead this family. They are salty, sharp, and
+                    divisive.</dd>
+                </dl>
+                <picture>
+                    <img class = "blueCheese" src = "../images/cheese-blue.svg" height = 160 width = 160 
+                    alt = "A picture of a triangular piece of cheese with Penicillium roqueforti parts"/>
+                </picture>
+                <dl>
+                    <dt><a href = "hard.html">Hard</a></dt>
+                    <dd>Hard cheeses are aged for months or years. Parmigiano-Reggiano,
+                    aged Gouda, and Comte reward the wait with crystals of crunch and
+                    deep, nutty flavor.</dd>
+                </dl>
+                <picture>
+                    <img class = "hardCheese" src = "../images/cheese-hard.svg" height = 160 width = 160 
+                    alt = "A picture of a triangular piece of cheese with a hard layer"/>
+                </picture>
+            </section>
+        </article>
+            <section>
+                <h2>A Word of Caution</h2>
+                <p id = "warning">Warning: The American product known as <q>processed cheese food</q> is,
+                at best, distantly related to cheese. Read the label.</p>
+                <blockquote>
+                    <p>As the writer Clifton Fadiman put it, cheese is milk's leap toward
+immortality.</p>
+                </blockquote>
+            </section>
+            <section>
+                <h2>Try It Yourself</h2>
+                <form>
+                    <fieldset>
+                        <legend>Which of these have you tasted?</legend>
+                        <input type = "checkbox" id = "Brie" name = "brie" />
+                        <label for = "Brie">Brie</label><br />
+                        <input type = "checkbox" id = "Roquefort" name = "roquefort" />
+                        <label for = "Roquefort">Roquefort</label><br />
+                        <input type = "checkbox" id = "Aged_gouda" name = "aged_gouda" />
+                        <label for = "Aged_gouda">Aged Gouda</label><br />
+                    </fieldset>
+                    <label for = "not-in">Tell us your favorite cheese and we will add it to the guide:</label>
+                    <input type = "text" id = "not-in" name = "not-in" placeholder = "e.g Comté" />
+                    <button type = "submit">Add it to the guide</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright 2026 <a href = ../about.html>The CSE Cheese Society</a>. Cheese responsibly.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Join Membership Page for The CSE Cheese Society">
+        <title>Join Us! - CSE Cheesy Society Guide</title>
+        <link rel="stylesheet" href="styles/tokens.css">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/site.css">
+        <style>
+           body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100svh;
+      --card-width: 38rem;
+
+      > header {
+        padding: var(--space-2) var(--space-3);
+        border-block-end: var(--border);
+        background: var(--panel);
+      }
+
+      > main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: var(--space-3);
+        max-width: var(--card-width);
+        margin-inline: auto;
+        margin-bottom: var(--space-3);
+        padding: var(--space-3);
+        border: var(--border);
+        border-block-start: var(--rule);
+        background: var(--panel);
+
+      }
+
+      > footer {
+        padding: var(--space-2) var(--space-3);
+        border-block-start: var(--border);
+        background: var(--panel);
+      }
+      fieldset {
+        flex-direction: row;
+        margin-bottom: var(--space-3);
+      }
+      .roundButton
+        {
+            height:3rem;
+            width:8rem;
+            border-radius: 20px;
+            border-width: 2px;
+            background-color: white;
+        }
+        .roundButton:hover{
+            background:lightyellow;
+            border-width: 3px;
+        }
+        #logo{
+            max-width: 120px;
+            max-height: 120px;
+        }
+    }
+        </style>
+    </head>
+    <body>
+         <header>
+            <h1><img id = "logo" src = "images/logo.svg" alt = "The CSE Cheese Society Logo featuring a cheese wheel with a nice slice of cheese taken out"
+                width = 160 height = 160 />
+                Join the Society</h1>
+            <p>Join The CSE Cheese Society</p>
+        </header>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href = "index.html">Society Home</a><br /></li>
+                <li><a href = "guide/index.html">Guide</a></li>
+                <li><a href = "about.html">About the Society</a><br /></li>
+                <li><a href = "join.html">Membership form</a><br /></li>
+            </ul>
+        </nav>
+        <main>
+            <p>Membership is free, meetings are monthly, and the cheese is real.
+            Fill out the form and the Keeper of the Cave will be in touch.<br />
+            <button class = "roundButton" commandfor="joinInfo" command="toggle-popover">Why join?</button><br />
+            <dialog id = "joinInfo" popover>
+                <p>Why join?</p>
+                <p>- Monthly tastings. The Society buys the cheese. You bring opinions.</p>
+                <p>- Voting rights in the Cheese of the Month election.</p>
+                <p>- Access to THE CAVE (a mini-fridge, but a very serious one).</p>
+                <p>- A laminated membership card featuring the cheese of your choice.</p>
+                <p>- Amnesty program for recovering blue-cheese skeptics.</p>
+                <button class = "roundButton" commandfor="joinInfo" command="toggle-popover">I'm convinced</button><br />
+            </dialog>
+        <form>
+            <fieldset>
+                <legend>Basic Info</legend>
+                <p>Name (Required):</p>
+                <input type = "text" id = "name" name = "Name" required/>
+                <p>Email (Required):</p>
+                <input type = "email" id = "email" name = "Email" required/>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Cheeses</legend>
+                <label for="family-select">Select a family:</label>
+                <select name = "families" id = "family-select">
+                    <option value="" id = "Undecided">Undecided</option>
+                    <option value="fresh">Fresh</option>
+                    <option value="soft-ripened">Soft-Ripened</option>
+                    <option value="blue">Blue</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+            <legend>Which of these have you tasted?</legend>
+            <input type = "checkbox" id = "Brie" name = "brie" />
+            <label for = "Brie">Brie</label><br />
+            <input type = "checkbox" id = "Roquefort" name = "roquefort" />
+            <label for = "Roquefort">Roquefort</label><br />
+            <input type = "checkbox" id = "Aged_gouda" name = "aged_gouda" />
+            <label for = "Aged_gouda">Aged Gouda</label><br />
+            </fieldset>
+        </form>
+        <form>
+            <label for = "not-in">Tell us your favorite cheese:</label>
+            <input type = "text" id = "not-in" name = "not-in" placeholder = "e.g Comté" />
+            <button type = "submit">Sign me up!</button>
+        </form>
+        </main>
+        <footer>
+            <p>Copyright 2026 <a href = about.html>The CSE Cheese Society</a>. Cheese responsibly.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto;}
+  .fresh{
+    view-transition-name: freshCheese;
+  }
+  .soft {
+    view-transition-name: softCheese;
+  }
+  .blue{
+    view-transition-name: blueCheese;
+  }
+  .hard{
+    view-transition-name: hardCheese;
+  }
+}
