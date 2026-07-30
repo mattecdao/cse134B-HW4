@@ -1,0 +1,39 @@
+@import url(tokens.css);
+@import url(global.css);
+@import url(site.css);
+
+body {
+            --figure-height: 11rem;
+            --figure-width: 11rem;
+
+            max-width: var(--measure);
+            margin-inline: auto;
+            padding: var(--space-3);
+
+            article{
+                figure{
+                    float: left;
+                    width: var(--figure-width);
+                    min-height: var(--figure-height);
+                    margin: 0 var(--space-2) var(--space-1) 0;
+                    padding: var(--space-2);
+                    border: var(--border);
+                    border-left: 0;
+                    background: var(--paper);
+                }
+                background-color: var(--panel);
+                border: var(--border)
+            }
+
+            > footer {
+                clear: both;
+                padding: var(--space-2);
+                border-block-start: var(--rule);
+                background: var(--panel);
+                margin-top: var(--space-2);
+            }
+            #logo{
+            max-width: 100rem;
+            max-height: 100rem;
+        }
+    } 
